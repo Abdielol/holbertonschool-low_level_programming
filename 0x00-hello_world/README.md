@@ -1,0 +1,1 @@
+This a new project where we find out how to use C 
