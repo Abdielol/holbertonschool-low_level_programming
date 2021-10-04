@@ -8,7 +8,7 @@ int main(void)
 {
 int l = 97;
 
-int u = 65;
+int b = 65;
 
 int y = 10;
 
