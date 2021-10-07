@@ -6,11 +6,13 @@
  */
 int main(void)
 {
-int c = 0;
-while (c <= 9)
+int c = 48;
+while (c <= 57)
 {
-printf("%i\n", c);
+putchar(c);
 c++;
 }
+putchar(10);
+
 return (0);
 }
