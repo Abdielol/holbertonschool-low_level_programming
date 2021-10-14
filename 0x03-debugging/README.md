@@ -1,0 +1,1 @@
+This project is about we can debugging about some errors and how can we fix it doing the "rubber duck debugging"
