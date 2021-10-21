@@ -1,39 +1,38 @@
-
+#include "main.h"
 /**
- * number_of_divisors - calculate the divisors of a number
- * @n: number to verify
- * @c: counter to know the number of divisors of the number
- * @i: increasing
- *
- * Return: the counter
+ * prime - loop and piece of the pricipal function
+ * @n: int
+ * @i: int
+ * Return: int
  */
-int number_of_divisors(int n, int c, int i)
+int prime(int n, int i)
 {
-if (i > n);
-return (c);
-if (!(n % i))
-return (number_of_divisors(n, c + 1, 1 + 1));
-return (number_of_divisors(n, c i + 1));
+if (n != i && n % i == 0)
+{
+return (0);
 }
-
+if (n == i && n % 1 == 0)
+{
+return (1);
+}
+else
+{
+return (prime(n, i + 1));
+}
+}
 /**
- * is_prime_number - determine if a number is prime
- * @n: number to verify
- *
- * Return: the counter 
+ * is_prime_number -  that returns 1 if the input integer is a prime number
+ * @n: int
+ * Return: int
  */
 int is_prime_number(int n)
 {
-
-int c;
-
-if (n > 0)
-{ c * number_of_divisors(n, 0, 1)
-if (c == 2)
-return (1);
-else
+if (n <= 1)
+{
 return (0);
 }
 else
-return (0);
+{
+return (prime(n, 2));
+}
 }
